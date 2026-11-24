@@ -29,7 +29,7 @@ jobs:
           fetch-depth: 0
           submodules: 'none'
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.14'
           architecture: x64
@@ -139,7 +139,7 @@ jobs:
           name: cuda-plugin-build-artifacts
           path: ${{ runner.temp }}\build
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.14'
           architecture: x64
